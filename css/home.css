@@ -133,10 +133,7 @@ header {
   margin-bottom: 70px;
 }
 
-#dishnes {
-  padding: 120px 0;
-  background-color: #f8f8f8;
-}
+
 
 .dishnes__header {
   color: #BB2339;
@@ -188,6 +185,62 @@ header {
   text-transform: capitalize;
 }
 
+#testimony {
+  padding: 100px 0 90px;
+  background: #F4F4F4;
+}
+
+.testimony__text {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.testimony__text h3 {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Round;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.92px;
+  margin-bottom: 8px;
+}
+.testimony__text img {
+  margin-bottom: 8px;
+}
+.testimony__text h4 {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Round;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+
+.testimony__card {
+  text-align: center;
+}
+
+.test__card {
+  padding: 30px 50px 30px 20px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+.test__card h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.test__card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
 @media (min-width: 1080px) {
   #home {
     display: -webkit-box;
@@ -205,5 +258,15 @@ header {
     position: absolute;
     bottom: 4%;
     right: 6%;
+  }
+}
+@media (min-width: 960px) {
+  .testimony__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: start;
   }
 }
