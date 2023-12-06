@@ -1,0 +1,141 @@
+@use "../global";
+@use "../layout/nav";
+@use "../utils/variables" as var;
+@use "../utils/mixin" as mix;
+
+header {
+    background-color: var.$qizil;
+   
+}
+
+
+#home {
+    padding: 80px 0 54px 0;
+    color: #fff;
+    h3 {
+        font-family: Round;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.92px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        
+    }
+    h1 {
+        font-family: Round;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 3.6px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 175%;
+        letter-spacing: 0.64px;
+        opacity: 0.7;
+        margin-bottom: 40px;
+    }
+    .home__link {
+        background-color:  transparent;
+        padding: 8px 32px;
+        border-radius: 100px;
+        border: 1px solid #FFF;
+        display: block;
+        a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 175%;
+            letter-spacing: 0.64px;
+        }
+    }
+}
+
+.home__left {
+    margin-bottom: 98px;
+    max-width: 824.5px;
+}
+
+.home__right {
+    display: inline-block;
+}
+
+.home__kebab {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#dishnes {
+    padding: 120px 0;
+    background-color: #f8f8f8;
+}
+
+.dishnes__header {
+    color: var.$qizil;
+    margin-bottom: 40px;
+    h3 {
+        font-family:  Round ;
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 1.44px;
+    }
+}
+
+.dishnes__carousel {
+    position: relative;
+}
+
+.owl-dot {
+    display: none !important;
+}
+
+ .owl-next {
+    @include mix.owl(80px,-40px);
+}
+
+.owl-prev {
+    @include mix.owl(90px, -40px);
+}
+
+
+#regular__menu {
+    padding: 120px 0;
+}
+
+.menu__text {
+    color: var.$qizil;
+    margin-bottom: 40px;
+    h3 {
+        font-family: Round;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 1.44px;
+        text-transform: capitalize;
+    }
+    
+}
+
+
+@media (min-width:1080px) {
+    #home {
+        display: flex;
+        gap: 98px;
+        .home__left {
+            width: 50%;
+        }
+        .home__right{
+            width: 50%;
+         }
+        .header__scroll {
+            position: absolute;
+            bottom: 4%;
+            right: 6%;
+        }
+    }
+}

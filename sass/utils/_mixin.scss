@@ -1,0 +1,7 @@
+@mixin owl ($right, $top) {
+     position: absolute;
+     text-align: center;
+     right: $right;
+     top: $top;
+
+}

@@ -1,0 +1,209 @@
+@import url(/fonts/static/OpenSans-Bold.ttf);
+@import url(/fonts/static/OpenSans-ExtraBold.ttf);
+@import url(/fonts/static/OpenSans-Italic.ttf);
+@import url(/fonts/static/OpenSans-Light.ttf);
+@import url(/fonts/static/OpenSans-Medium.ttf);
+@import url(/fonts/static/OpenSans-Regular.ttf);
+@import url(/fonts/static/OpenSans-SemiBold.ttf);
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 0px;
+  background-color: transparent !important;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar-nav a {
+  color: #FFF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navbar-nav a:hover {
+  color: #c4c4c4;
+  text-decoration-line: underline;
+}
+
+.nav__btn {
+  background-color: transparent;
+  padding: 10px 40px;
+  border-radius: 100px;
+  border: 1px solid #FFF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.nav__btn:hover {
+  background-color: #fff;
+}
+.nav__btn:hover a {
+  color: #BB2339;
+}
+.nav__btn a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 0.8px;
+}
+
+header {
+  background-color: #BB2339;
+}
+
+#home {
+  padding: 80px 0 54px 0;
+  color: #fff;
+}
+#home h3 {
+  font-family: Round;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+#home h1 {
+  font-family: Round;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 3.6px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#home p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+#home .home__link {
+  background-color: transparent;
+  padding: 8px 32px;
+  border-radius: 100px;
+  border: 1px solid #FFF;
+  display: block;
+}
+#home .home__link a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+
+.home__left {
+  margin-bottom: 98px;
+  max-width: 824.5px;
+}
+
+.home__right {
+  display: inline-block;
+}
+
+.home__kebab {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+#dishnes {
+  padding: 120px 0;
+  background-color: #f8f8f8;
+}
+
+.dishnes__header {
+  color: #BB2339;
+  margin-bottom: 40px;
+}
+.dishnes__header h3 {
+  font-family: Round;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 1.44px;
+}
+
+.dishnes__carousel {
+  position: relative;
+}
+
+.owl-dot {
+  display: none !important;
+}
+
+.owl-next {
+  position: absolute;
+  text-align: center;
+  right: 80px;
+  top: -40px;
+}
+
+.owl-prev {
+  position: absolute;
+  text-align: center;
+  right: 90px;
+  top: -40px;
+}
+
+#regular__menu {
+  padding: 120px 0;
+}
+
+.menu__text {
+  color: #BB2339;
+  margin-bottom: 40px;
+}
+.menu__text h3 {
+  font-family: Round;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 1080px) {
+  #home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 98px;
+  }
+  #home .home__left {
+    width: 50%;
+  }
+  #home .home__right {
+    width: 50%;
+  }
+  #home .header__scroll {
+    position: absolute;
+    bottom: 4%;
+    right: 6%;
+  }
+}
