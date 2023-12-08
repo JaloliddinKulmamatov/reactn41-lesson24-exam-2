@@ -285,6 +285,8 @@ header {
   border: 1px solid rgba(36, 36, 36, 0.1);
   background: #FFF;
   max-width: 680px;
+  padding: 20px 30px 30px 20px;
+  margin-bottom: 60px;
 }
 .news__card img {
   width: 100%;
@@ -304,6 +306,65 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__bottom a {
+  color: #BB2339;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card__bottom a:hover {
+  color: rgb(103, 11, 26);
+}
+
+.more__new {
+  text-align: center;
+}
+
+.more__new button {
+  font-family: Round;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+  padding: 8px 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid var(--qizil, #BB2339);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.more__new button a {
+  color: #242424;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.more__new button:hover {
+  background-color: #BB2339;
+}
+.more__new button:hover a {
+  color: #fff;
+}
+
+#modal {
+  margin-bottom: 120px;
 }
 
 @media (min-width: 1080px) {
