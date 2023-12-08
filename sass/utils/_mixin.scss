@@ -5,3 +5,13 @@
      top: $top;
 
 }
+
+@mixin link ($color) {
+     color: $color;
+     font-variant-numeric: lining-nums tabular-nums;
+     font-family: Open ;
+     font-size: 14px;
+     font-weight: 400;
+     letter-spacing: 0.42px;
+     text-transform: capitalize;
+}

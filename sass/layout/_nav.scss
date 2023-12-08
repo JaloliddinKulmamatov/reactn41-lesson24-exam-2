@@ -2,10 +2,12 @@
 @use "../utils/variables" as var;
 
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 26px 0px;
-    background-color: transparent !important;
+    background-color: var.$qizil !important;
+    width: 100%;
 }
 
 .navbar-nav {

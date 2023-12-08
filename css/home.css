@@ -18,6 +18,7 @@ li {
 }
 
 .navbar {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +26,8 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 26px 0px;
-  background-color: transparent !important;
+  background-color: #BB2339 !important;
+  width: 100%;
 }
 
 .navbar-nav {
@@ -74,8 +76,9 @@ header {
 }
 
 #home {
-  padding: 80px 0 54px 0;
+  padding: 110px 0 54px 0;
   color: #fff;
+  z-index: 99;
 }
 #home h3 {
   font-family: Round;
@@ -133,7 +136,10 @@ header {
   margin-bottom: 70px;
 }
 
-
+#dishnes {
+  padding: 120px 0;
+  background-color: #F8F8F8;
+}
 
 .dishnes__header {
   color: #BB2339;
@@ -152,6 +158,11 @@ header {
 
 .owl-dot {
   display: none !important;
+}
+
+.dishnes__carousel {
+  position: relative;
+  z-index: 2;
 }
 
 .owl-next {
@@ -227,6 +238,7 @@ header {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid rgba(51, 51, 51, 0.1);
+  margin-bottom: 20px;
 }
 .test__card h5 {
   font-size: 24px;
@@ -239,6 +251,59 @@ header {
   font-weight: 400;
   line-height: 22px;
   opacity: 0.7;
+}
+
+#news {
+  padding: 120px 0;
+}
+
+.news__text {
+  padding: 20px 30px 30px 20px;
+}
+.news__text h3 {
+  color: #242424;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+.news__text h4 {
+  color: #BB2339;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.news__card {
+  border-radius: 14px;
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  background: #FFF;
+  max-width: 680px;
+}
+.news__card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.news__card h5 {
+  color: #242424;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Round;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.news__card p {
+  color: #AAA;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @media (min-width: 1080px) {
@@ -268,5 +333,19 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-align: start;
+  }
+}
+@media (min-width: 810px) {
+  .news__cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, 2fr) !important;
+    gap: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .news__cards {
+    display: grid !important;
+    grid-template-columns: repeat(3, 2fr) !important;
+    gap: 35px;
   }
 }

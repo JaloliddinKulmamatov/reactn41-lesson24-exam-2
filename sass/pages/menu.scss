@@ -1,1 +1,9 @@
-@use "../global"
+@use "../global";
+@use "../layout/nav";
+@use "../utils/variables" as var;
+@use "../utils/mixin" as mix;
+
+.link__home {
+    padding: 170px; 
+        color: red;
+}

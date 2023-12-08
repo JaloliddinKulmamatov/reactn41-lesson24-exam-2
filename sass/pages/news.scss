@@ -1,1 +1,4 @@
-@use "../global"
+@use "../global";
+@use "../layout/nav";
+@use "../utils/variables" as var;
+@use "../utils/mixin" as mix;
