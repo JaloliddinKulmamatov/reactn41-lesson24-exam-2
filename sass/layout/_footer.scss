@@ -1,0 +1,42 @@
+footer {
+    background: #BB2339;
+    color: white;
+    padding: 300px 0 40px;
+    h6 {
+    color: #FFF;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family:  Round ;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 1.28px;
+        text-transform: capitalize;
+    }
+    p {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.64px;
+    }
+}
+
+.footer-middle {
+    img {
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+.footer-middle, .footer-left, .footer-right {
+    text-align: center;
+}
+
+
+.footer {
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

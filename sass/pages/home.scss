@@ -4,6 +4,7 @@
 @use "../utils/variables" as var;
 @use "../utils/mixin" as mix;
 @use "../themes/backtop";
+@use "../layout/footer";
 
 header {
     background-color: var.$qizil;
@@ -11,17 +12,6 @@ header {
     
 }
 
-#backtop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
 
 #home {
     color: #fff;
@@ -320,6 +310,18 @@ header {
         }
     }
 }
+
+
+    p {
+        font-family: "Cera Round Pro";
+        font-weight: 700;
+        font-size: 1.45rem;
+        line-height: 130%;
+        letter-spacing: .04em;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
 
 @media (min-width:960px) {
     .testimony__card {
