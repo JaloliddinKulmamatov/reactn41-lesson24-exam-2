@@ -1,16 +1,29 @@
 @use "../global";
+@use "../themes/loading";
 @use "../layout/nav";
 @use "../utils/variables" as var;
 @use "../utils/mixin" as mix;
+@use "../themes/backtop";
 
 header {
     background-color: var.$qizil;
-   
+    padding: 130px 0 54px 0;
+    
 }
 
+#backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
 #home {
-    padding: 110px 0 54px 0;
     color: #fff;
     z-index: 99;
     h3 {

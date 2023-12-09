@@ -5,9 +5,10 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 26px 0px;
+    padding: 40px 0px;
     background-color: var.$qizil !important;
     width: 100%;
+    transition: all 0.5s;
 }
 
 .navbar-nav {
@@ -44,3 +45,10 @@
     }
 }
 
+nav {
+    padding: 30px 0;
+}
+
+.navbar-shrink {
+    padding: 20px 0;
+}
