@@ -119,3 +119,37 @@ nav {
   padding: 15px;
   border-radius: 50%;
 }
+
+header {
+  padding: 200px 0;
+}
+
+#menus ul {
+  margin-right: 100px;
+  padding: 20px 80px 20px 20px;
+  gap: 20px;
+}
+#menus h3 {
+  color: #bb2339;
+  font-family: "Cera Round Pro", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.nav-pills {
+  padding: 50px 200px 50px 40px;
+  border-radius: 20px;
+  background: var(--qizil, #BB2339);
+}
+
+.nav-linkn {
+  color: #fff;
+  border-radius: 100px !important;
+  border: 1px solid #bb2339;
+  background-color: green;
+}
